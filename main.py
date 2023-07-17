@@ -1,7 +1,7 @@
-import streamlit as st 
+"MODULE"
+import streamlit as st
 import yfinance as yf 
 import plotly.graph_objects as go
-
 
 #Título do app 
 st.title('App aperreio')
@@ -33,4 +33,4 @@ st.plotly_chart(fig1)
 fig2 = go.Figure()
 fig2.add_trace(go.Scatter(x=data2.index, y = data2['Close'], name = 'Fechamento'))
 fig2.update_layout(title = f"{ticker_symbol2}", xaxis_titles = "Data", yaxis_title = "Preço")
-st.plotly_chart(fig2)
+st.plotly_chart(fig2) 
